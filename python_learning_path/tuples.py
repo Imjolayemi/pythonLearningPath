@@ -19,3 +19,10 @@ print("This tuple has different data types \n \t:", differentDataTypeTuple, "\n"
 """ in python tuple is also recognized as a data type of its own,"""
 print("The data type of myTuple is \n \t:", type(myTuple), "\n")
 print("The data type of oneItemTuple is \n \t:", type(oneItemTuple), "\n")
+
+tupleConstructor = """You can also create a tuple using the tuple() constructor"""
+print(tupleConstructor, "\n")
+
+tupleUsingConstructor = tuple(("No", 240, "Agip Area", "Station Road", "Ede", "Osun State", "Nigeria"))
+
+print("This tuple was created using the tuple() constructor \n \t:", tupleUsingConstructor, "\n")
