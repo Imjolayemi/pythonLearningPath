@@ -46,3 +46,46 @@ print(checkingItem, "\n")
 
 if "Akure" in myTuple:
     print("This output is from checking if 'Akure' exists in the Tuple below \n \t:", myTuple, "\n \t: Yes, 'Akure' is in the tuple \n ")
+
+updateTuple= """ Tuples are immutable, meaning you cannot change, add or remove items after the tuple has been created, but can be converted to a list and changed, then converted back to a tuple"""
+print(updateTuple, "\n")
+
+print("The original tuple is \n \t:", myTuple, "\n") # printing the original tuple
+
+myList = list(myTuple) # converting tuple to list
+myList[1] = 240 # changing the second item in the list
+myTuple = tuple(myList) # converting the list back to a tuple
+
+print("The updated tuple is \n \t:", myTuple, "\n") # printing the updated tuple
+
+addingItems = """ You cannot add items to a tuple, but you can convert it to a list, add the item, then convert it back to a tuple"""
+print(addingItems, "\n")
+
+print("The original tuple is \n \t:", myTuple, "\n") # printing the original tuple
+
+myList = list(myTuple) # converting tuple to list
+myList.append("Africa") # adding an item to the list
+myTuple = tuple(myList) # converting the list back to a tuple
+
+print("The updated tuple is \n \t:", myTuple, "\n Adding 'Africa' to the tuple \n") # printing the updated tuple
+
+removingItems = """ You cannot remove items from a tuple, but you can convert it to a list, remove the item, then convert it back to a tuple"""
+print(removingItems, "\n")
+
+print("The original tuple is \n \t:", myTuple, "\n") # printing the original tuple
+myList = list(myTuple) # converting tuple to list
+myList.remove("layout") # removing an item from the list
+myTuple = tuple(myList) # converting the list back to a tuple
+
+print("The updated tuple is \n \t:", myTuple, "\n Removing 'layout' from the tuple \n") # printing the updated tuple
+
+unpackingTuple = """ In python you can unpack a tuple by assigning the items to different variables"""
+print(unpackingTuple, "\n")
+
+fruits = ("Mango", "Banana", "Orange") # creating a tuple
+print("The original tuple is \n \t:", fruits, "\n") # printing the original tuple
+
+(green, yellow, orange) = fruits # unpacking the tuple
+print("The unpacked items are \n \t:", green, ",", yellow, "and", orange, "\n By giving each of them variable names") # printing the unpacked items
+
+
