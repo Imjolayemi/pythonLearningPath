@@ -88,4 +88,41 @@ print("The original tuple is \n \t:", fruits, "\n") # printing the original tupl
 (green, yellow, orange) = fruits # unpacking the tuple
 print("The unpacked items are \n \t:", green, ",", yellow, "and", orange, "\n By giving each of them variable names") # printing the unpacked items
 
+""" Unpacking items in a tuple can also be done using asterisk to assign the remaining items to a variable"""
 
+fruits = ("Mango", "Banana", "Orange", "Pineapple", "Papaya") # creating a tuple
+print("The original tuple is \n \t:", fruits, "\n") # printing the original tuple
+(green, yellow, *tropic) = fruits # unpacking the tuple
+print("The unpacked items are \n \t:", green, ",", yellow, "and", tropic, "\n By giving each of them variable names and using asterisk to assign the remaining items to a variable called tropic") # printing the unpacked items
+
+tupleLoop = """ You can loop through tuples by using for loop and the while loop, using the len() function to know the length of tuple and range() function to loop through the index numbers"""
+print(tupleLoop, "\n")
+
+print("Looping through the tuple below using a for loop \n \t:", myTuple, "\n") #  printing out the tuple
+
+for i in myTuple: # looping through the tuple using for loop
+    print(i) # printing each item in the tuple
+
+# looping through the tuple item by printing out an item using its index number
+print("\nLooping through the tuple below by referring to the index number using for loop \n \t:", myTuple, "\n") #  printing out the tuple
+
+for i in range(len(myTuple)): # looping through the tuple using the index number
+    print(myTuple[i]) # printing each item in the tuple by refering to its index number
+
+# looping through the tuple using while loop
+print("\nLooping through the tuple below using while loop \n \t:", myTuple, "\n") #  printing out the tuple
+i = 0 # initializing the index number
+while i < len(myTuple): # looping through the tuple using while loop
+    print(myTuple[i]) # printing each item in the tuple by refering to its index number
+    i = i + 1 # incrementing the index number
+
+joiningTuples = """ You can join two or more tuples by using the + operator and you can also multiply tuples by using the * operator """
+print(joiningTuples, "\n")
+
+tuple1 = ("a", "b", "c") # creating the first tuple
+tuple2 = (1, 2, 3) # creating the second tuple
+tuple3 = tuple1 + tuple2 # joining the two tuples
+print("Joining two tuples by adding\n \t:", tuple1, " and ", tuple2, " using the + operator will give us \n \t:", tuple3, "\n") # printing the joined tuple
+
+tuple4 = tuple3 * 2 # multiplying the joined tuple
+print("Multiplying the joined tuple using * operator \n \t:", tuple3, " will give us \n \t:", tuple4, "\n") # printing the multiplied tuple
