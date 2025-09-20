@@ -126,3 +126,21 @@ print("Joining two tuples by adding\n \t:", tuple1, " and ", tuple2, " using the
 
 tuple4 = tuple3 * 2 # multiplying the joined tuple
 print("Multiplying the joined tuple using * operator \n \t:", tuple3, " will give us \n \t:", tuple4, "\n") # printing the multiplied tuple
+
+tupleMethods = """ Tuples have only two built-in methods, count() and index()"""
+print(tupleMethods, "\n")
+
+print("The original tuple is \n \t:", myTuple, "\n") # printing the original tuple
+print("Using the count() method to count how many times 'Akure' appears in the tuple \n \t:", myTuple.count("Akure"), "\n") # using the count() method to count how many times 'Akure' appears in the tuple
+
+myTupleList = list(myTuple) # converting tuple to list
+myTupleList.insert(3, "layout") # inserting 'layout' to the list at index 3
+myTupleList.insert(4, "Akure") # inserting 'layout' to the list at index 4
+myTuple = tuple(myTupleList) # converting the list back to a tuple
+print("The original tuple now is \n \t:", myTuple, "\n after inserting a new item to the tuple \n") # printing the original tuple
+
+print("Using the index() method to find the index number of 'layout' in the tuple \n \t:", myTuple.index("layout"), "\n") # using the index() method to find the index number of 'layout' in the tuple
+
+print("Using the index() method to find the index number of 'Akure' in the tuple \n \t:", myTuple.index("Akure"), "\n") # using the index() method to find the index number of 'Akure' in the tuple
+
+
