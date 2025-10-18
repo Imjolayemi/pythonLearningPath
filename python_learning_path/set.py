@@ -128,3 +128,10 @@ print("Finding the symmetric difference of two sets setJ and setK using symmetri
 
 print("You can also find the symmetric difference of two sets using the ^ operator by creating a new setL = setJ ^ setK which gives the same result as symmetric_difference() method but can only works for sets not for other iterables,which result to the answer below \n \t:", setL, "\n")
 
+FrozenSet = """ A frozenset is an immutable version of a set, which means that once it is created, its elements cannot be changed, added, or removed. Frozensets are hashable, which means they can be used as keys in dictionaries or as elements of other sets. """
+print(FrozenSet, "\n")
+
+myfrozenset = frozenset(("apple", "banana", "cherry"))
+print("An Example of a frozenset is shown below \n \t:", myfrozenset, "\n") # Output: frozenset({'banana', 'cherry', 'apple'})
+
+print(type(myfrozenset), "\n")
