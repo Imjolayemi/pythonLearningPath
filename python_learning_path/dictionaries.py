@@ -55,3 +55,83 @@ print(addItem, "\n")
 mydict["favorite_color"] = "blue"
 print("The new item added to the dictionary is favorite_color: ", mydict["favorite_color"], "\n")
 
+removeItem = """ 
+To remove an item from a dictionary, we can use the pop() method or the del keyword.
+The pop() method removes the item with the specified key name.
+The del keyword removes the item with the specified key name as well.
+We can also use the clear() method to empty the dictionary. 
+The del keyword can also delete the dictionary completely. 
+The popitem() method removes the last inserted item (in versions 3.7 and later). 
+"""
+print(removeItem, "\n")
+
+mydict.pop("country") #remove the country item
+print("The dictionary after removing the country item using pop(): ", mydict, "\n")
+
+del mydict["favorite_color"] #remove the favorite_color item
+print("The dictionary after removing the favorite_color item using del: ", mydict, "\n")
+
+mydict.popitem() #remove the last inserted item
+print("The dictionary after removing the last inserted item using popitem(): ", mydict, "\n")
+
+mydict.clear() #clear the dictionary
+print("The dictionary after clearing all items using clear(): ", mydict, "\n")
+
+newdict = {
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2020,
+    "color": "red"
+}#create a new dictionary
+print("A new dictionary has been created: ", newdict, "\n")
+
+loopInDict = """ We can loop through a dictionary using a for loop. We can loop through the keys, values, or items in the dictionary. 
+The default is to loop through the keys. 
+You can use the keys() method to loop through the keys.
+The values() method to loop through the values
+And the items() method to loop through the items."""
+print(loopInDict, "\n")
+
+for key in newdict:
+    print("Key: ", key, "\n") #loop through keys and print them
+
+
+for value in newdict.values():
+    print("Value: ", value, "\n") #loop through values and print them
+
+for item in newdict.items():
+    print("Item: ", item, "\n") #loop through items and print them
+
+for x,y in newdict.items():
+    print(x, y, "\n") #loop through items and print key and value separately
+
+copyDict = """ To copy a dictionary, we can use the copy() method or the dict() function. """
+print(copyDict, "\n")
+
+dictcopy1 = newdict.copy() #using copy() method
+print("Dictionary copied using copy() method: ", dictcopy1, "\n")
+
+dictcopy2 = dict(newdict) #using dict() function
+print("Dictionary copied using dict() function: ", dictcopy2, "\n")
+
+nestedDict = """ A nested dictionary is a dictionary that contains other dictionaries as its values. """
+print(nestedDict, "\n")
+
+ElectronicsStore = {
+    "laptop": {
+        "brand": "Dell",
+        "model": "XPS 13",
+        "price": 999.99
+    },
+    "smartphone": {
+        "brand": "Apple",
+        "model": "iPhone 13",
+        "price": 799.99
+    },
+    "tablet": {
+        "brand": "Samsung",
+        "model": "Galaxy Tab S7",
+        "price": 649.99
+    }
+} #create a nested dictionary
+print("A nested dictionary representing an electronics store: ", ElectronicsStore, "\n")
