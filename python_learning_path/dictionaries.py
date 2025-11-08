@@ -135,3 +135,18 @@ ElectronicsStore = {
     }
 } #create a nested dictionary
 print("A nested dictionary representing an electronics store: ", ElectronicsStore, "\n")
+
+print("Accessing the model of the laptop: ", ElectronicsStore["laptop"]["model"], "\n") #accessing a value in the nested dictionary
+print("Accessing the price of the smartphone: ", ElectronicsStore["smartphone"]["price"], "\n") #accessing another value in the nested dictionary
+
+nestedDictLoop = """ We can loop through a nested dictionary using a for loop. We can loop through the outer dictionary and then loop through the inner dictionaries. """
+print(nestedDictLoop, "\n")
+
+for category, items in ElectronicsStore.items():
+    print("Category: ", category, "\n")
+
+    for item, details in items.items():
+        print("    ",item, ": ", details, "\n")
+    
+
+# End of dictionaries.py
